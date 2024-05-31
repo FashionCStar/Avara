@@ -1,0 +1,2106 @@
+{
+  "contractName": "AvaraModule",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "previousOwner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "moduleName",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "moduleVersion",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"moduleName\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"moduleVersion\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"previousOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"moduleName()\":{\"details\":\"Returns the module name.\"},\"moduleVersion()\":{\"details\":\"Returns the module version.\"},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"previousOwner()\":{\"details\":\"Returns the address of the previous owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without an owner. It won't be possible to call `onlyOwner` functions anymore. Can only be called by the current owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/oncemore/Blockchain/avara-test/contract/contracts/abstract/AvaraModule.sol\":\"AvaraModule\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/oncemore/Blockchain/avara-test/contract/contracts/Avara.sol\":{\"keccak256\":\"0xea9988eaac0d6a38503d6b78081135a9348f4073d321723202804bb059698f53\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://62517fd074a5ecb1de9bb0830118e3f443ab9184057766332c51c65bfb58de48\",\"dweb:/ipfs/QmRiZU62aw7kx4LWVsFk8dettK3ehYcTr53kC7u7VC7Y9f\"]},\"/home/oncemore/Blockchain/avara-test/contract/contracts/abstract/AvaraModule.sol\":{\"keccak256\":\"0xaaa29d473a1c2991e095bf219fc4aa5aaa69e6a3073de5362c6599d9a503e80e\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://2e1be07432d5170558f6b67dea9d4a51c4d88b448ccb6087ff36543b073da0ab\",\"dweb:/ipfs/QmekzUdgdfStz2j6oqXnQ9F39N4FtrAuS86dWGbhTPwxdb\"]},\"/home/oncemore/Blockchain/avara-test/contract/contracts/abstract/Context.sol\":{\"keccak256\":\"0x50de2fa042312009746a44f234a6fd529c9071692863286ad5143a56d95ef2a1\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://0dc17f91f281a53c9bff4c4d564bdc66b1a27fbd70f2cfe21c921983f4f863d7\",\"dweb:/ipfs/QmNdnHqVUS1Ku6yPLqXEaRiuTJzTHhs8pCuTKRmAi8PkaH\"]},\"/home/oncemore/Blockchain/avara-test/contract/contracts/abstract/Ownable.sol\":{\"keccak256\":\"0x6c55bcaad9eac67eb3126ea1620e4374908d26c9345010e09cefe298d906e254\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://44c7945cfd11c6c031f5db2ffb255a965864b0908a8d513a7438281e997047b6\",\"dweb:/ipfs/QmehnvdjUFAgqK8UeErefJUm71eJmq6Lw51tuhGGu8sv2o\"]},\"/home/oncemore/Blockchain/avara-test/contract/contracts/interface/common/IBEP20.sol\":{\"keccak256\":\"0x4fc0b5f4af6b04fbb2f643ccbf0837466193169dd4612e945bbbadaa59792815\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://383fd6d0ccda1c001029d1ddbce9c1ba90e73b1f2b49cf61783f62c5c81a0068\",\"dweb:/ipfs/QmRLKMVwPR9AoNaYf5tkQf6Ae7AKpRH6ywfocyjtoECRu5\"]},\"/home/oncemore/Blockchain/avara-test/contract/contracts/interface/pancake/IPancakeFactory.sol\":{\"keccak256\":\"0xce8e690c4b1ee9f52e2d5c03f52e704fcb564d124325f9b7ac43a4d42e87911b\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://baafc61526bf017acd36e5a83aeeb4c3b5faaa733c818dea7b241edc24a93be9\",\"dweb:/ipfs/QmZHRh6dEDCui7QxYPE47GmqKmAEE9dx5U8qUKcoWcGfae\"]},\"/home/oncemore/Blockchain/avara-test/contract/contracts/interface/pancake/IPancakePair.sol\":{\"keccak256\":\"0x4d05ea17c02bb658d39936d222397abb0120d8d1209c06e84b3bf2c5bb97f32a\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://20fe2f9271cd5064599dfbf442f6ae7d64cac66ab83f28d1930fbf527d28f5b6\",\"dweb:/ipfs/QmTY1o7LWtBUzjhQHk1ScX1tniK7zsCXK9J22nU8mcxB2x\"]},\"/home/oncemore/Blockchain/avara-test/contract/contracts/interface/pancake/IPancakeRouter01.sol\":{\"keccak256\":\"0x755997298b7a20d1c89095dcdd36c760318c9f9af06dfda7009543e982e998fe\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://26a7a17f65d029c621436ccddc881ab2ceb5d224beadb0fde8904bf28788f2ba\",\"dweb:/ipfs/QmUkBKwGhVqwfpkwDNLVZSoe4VxdRzQNyeGHmcG464Sq4m\"]},\"/home/oncemore/Blockchain/avara-test/contract/contracts/interface/pancake/IPancakeRouter02.sol\":{\"keccak256\":\"0x2e60a86d076d449ccdb30ffd5552819643bdce4116e6933cf42e0127ae172630\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://0b45cf7c26fff4250651295a3d8b28a22491d202b5fc56cb9c2a506aed958a8c\",\"dweb:/ipfs/QmaoB9uk1tqMV4jhTr2eRtT7f4ZK7WdtQc8eG9QT5LEeP6\"]},\"/home/oncemore/Blockchain/avara-test/contract/contracts/library/SafeMath.sol\":{\"keccak256\":\"0x250b8ac9d1eee477e4b5781067d51f52805e0ca93a44115532bb87fcca17f5a4\",\"license\":\"AGPL-3.0-or-later\",\"urls\":[\"bzz-raw://27af98b0e3d587225de56ca8ecc96f05d91ceebd7336423f9685bc181514b7e7\",\"dweb:/ipfs/QmWYLtyZCugxLP6ZAhWVBYJM3xirtfXzqbMtmpWUfrnCYN\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "/**\n    ***********************************************************\n    * Copyright (c) Avara Dev. 2021. (Telegram: @avara_cc)  *\n    ***********************************************************\n\n     ▄▄▄·  ▌ ▐· ▄▄▄· ▄▄▄   ▄▄▄·\n    ▐█ ▀█ ▪█·█▌▐█ ▀█ ▀▄ █·▐█ ▀█\n    ▄█▀▀█ ▐█▐█•▄█▀▀█ ▐▀▀▄ ▄█▀▀█\n    ▐█ ▪▐▌ ███ ▐█ ▪▐▌▐█•█▌▐█ ▪▐▌\n     ▀  ▀ . ▀   ▀  ▀ .▀  ▀ ▀  ▀  - Binance Smart Chain\n\n    Avara - Always Vivid, Always Rising Above\n    https://avara.cc/\n    https://github.com/avara-cc\n    https://github.com/avara-cc/Avara/wiki\n*/\n\n// SPDX-License-Identifier: AGPL-3.0-or-later\n\npragma solidity 0.8.4;\n\nimport \"./Ownable.sol\";\nimport \"../Avara.sol\";\n\nabstract contract AvaraModule is Ownable {\n\n    Avara private _baseContract;\n    string private _moduleName;\n    string private _moduleVersion;\n\n    constructor(address cOwner, address baseContract, string memory name, string memory version) Ownable(cOwner) {\n        _baseContract = Avara(payable(baseContract));\n        require(_baseContract.owner() == cOwner, \"The module deployer must be the owner of the base contract!\");\n\n        _moduleName = name;\n        _moduleVersion = version;\n    }\n\n    /**\n     * @dev Returns the module name.\n     */\n    function moduleName() external view returns (string memory) {\n        return _moduleName;\n    }\n\n    /**\n     * @dev Returns the module version.\n     */\n    function moduleVersion() external view returns (string memory) {\n        return _moduleVersion;\n    }\n\n    /**\n     * @dev Returns the base contract.\n     */\n    function getBaseContract() internal view returns (Avara) {\n        return _baseContract;\n    }\n\n}\n",
+  "sourcePath": "/home/oncemore/Blockchain/avara-test/contract/contracts/abstract/AvaraModule.sol",
+  "ast": {
+    "absolutePath": "/home/oncemore/Blockchain/avara-test/contract/contracts/abstract/AvaraModule.sol",
+    "exportedSymbols": {
+      "Avara": [
+        2813
+      ],
+      "AvaraModule": [
+        4644
+      ],
+      "Context": [
+        4670
+      ],
+      "IBEP20": [
+        4889
+      ],
+      "IPancakeFactory": [
+        4953
+      ],
+      "IPancakePair": [
+        5196
+      ],
+      "IPancakeRouter01": [
+        5505
+      ],
+      "IPancakeRouter02": [
+        5594
+      ],
+      "Ownable": [
+        4787
+      ],
+      "SafeMath": [
+        5906
+      ]
+    },
+    "id": 4645,
+    "license": "AGPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4563,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".4"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "758:22:4"
+      },
+      {
+        "absolutePath": "/home/oncemore/Blockchain/avara-test/contract/contracts/abstract/Ownable.sol",
+        "file": "./Ownable.sol",
+        "id": 4564,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 4645,
+        "sourceUnit": 4788,
+        "src": "782:23:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/oncemore/Blockchain/avara-test/contract/contracts/Avara.sol",
+        "file": "../Avara.sol",
+        "id": 4565,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 4645,
+        "sourceUnit": 2814,
+        "src": "806:22:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 4566,
+              "name": "Ownable",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 4787,
+              "src": "863:7:4"
+            },
+            "id": 4567,
+            "nodeType": "InheritanceSpecifier",
+            "src": "863:7:4"
+          }
+        ],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 4644,
+        "linearizedBaseContracts": [
+          4644,
+          4787,
+          4670
+        ],
+        "name": "AvaraModule",
+        "nameLocation": "848:11:4",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4570,
+            "mutability": "mutable",
+            "name": "_baseContract",
+            "nameLocation": "892:13:4",
+            "nodeType": "VariableDeclaration",
+            "scope": 4644,
+            "src": "878:27:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Avara_$2813",
+              "typeString": "contract Avara"
+            },
+            "typeName": {
+              "id": 4569,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 4568,
+                "name": "Avara",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 2813,
+                "src": "878:5:4"
+              },
+              "referencedDeclaration": 2813,
+              "src": "878:5:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Avara_$2813",
+                "typeString": "contract Avara"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 4572,
+            "mutability": "mutable",
+            "name": "_moduleName",
+            "nameLocation": "926:11:4",
+            "nodeType": "VariableDeclaration",
+            "scope": 4644,
+            "src": "911:26:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 4571,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "911:6:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 4574,
+            "mutability": "mutable",
+            "name": "_moduleVersion",
+            "nameLocation": "958:14:4",
+            "nodeType": "VariableDeclaration",
+            "scope": 4644,
+            "src": "943:29:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 4573,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "943:6:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 4614,
+              "nodeType": "Block",
+              "src": "1088:237:4",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 4595,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 4588,
+                      "name": "_baseContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4570,
+                      "src": "1098:13:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Avara_$2813",
+                        "typeString": "contract Avara"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "arguments": [
+                            {
+                              "id": 4592,
+                              "name": "baseContract",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 4578,
+                              "src": "1128:12:4",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "id": 4591,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "1120:8:4",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_payable_$",
+                              "typeString": "type(address payable)"
+                            },
+                            "typeName": {
+                              "id": 4590,
+                              "name": "address",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "1120:8:4",
+                              "stateMutability": "payable",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 4593,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1120:21:4",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        ],
+                        "id": 4589,
+                        "name": "Avara",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2813,
+                        "src": "1114:5:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Avara_$2813_$",
+                          "typeString": "type(contract Avara)"
+                        }
+                      },
+                      "id": 4594,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1114:28:4",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Avara_$2813",
+                        "typeString": "contract Avara"
+                      }
+                    },
+                    "src": "1098:44:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Avara_$2813",
+                      "typeString": "contract Avara"
+                    }
+                  },
+                  "id": 4596,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1098:44:4"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 4602,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "expression": {
+                              "id": 4598,
+                              "name": "_baseContract",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 4570,
+                              "src": "1160:13:4",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_Avara_$2813",
+                                "typeString": "contract Avara"
+                              }
+                            },
+                            "id": 4599,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "owner",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 4706,
+                            "src": "1160:19:4",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
+                              "typeString": "function () view external returns (address)"
+                            }
+                          },
+                          "id": 4600,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1160:21:4",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "id": 4601,
+                          "name": "cOwner",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4576,
+                          "src": "1185:6:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "1160:31:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "546865206d6f64756c65206465706c6f796572206d75737420626520746865206f776e6572206f6620746865206261736520636f6e747261637421",
+                        "id": 4603,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1193:61:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_c433a4a883465c851482e8861768b3ae640c6d1a0d8d0d01dd5f602cbb5b7eab",
+                          "typeString": "literal_string \"The module deployer must be the owner of the base contract!\""
+                        },
+                        "value": "The module deployer must be the owner of the base contract!"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_c433a4a883465c851482e8861768b3ae640c6d1a0d8d0d01dd5f602cbb5b7eab",
+                          "typeString": "literal_string \"The module deployer must be the owner of the base contract!\""
+                        }
+                      ],
+                      "id": 4597,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4294967278,
+                        4294967278
+                      ],
+                      "referencedDeclaration": 4294967278,
+                      "src": "1152:7:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 4604,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1152:103:4",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 4605,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1152:103:4"
+                },
+                {
+                  "expression": {
+                    "id": 4608,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 4606,
+                      "name": "_moduleName",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4572,
+                      "src": "1266:11:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 4607,
+                      "name": "name",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4580,
+                      "src": "1280:4:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1266:18:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 4609,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1266:18:4"
+                },
+                {
+                  "expression": {
+                    "id": 4612,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 4610,
+                      "name": "_moduleVersion",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4574,
+                      "src": "1294:14:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 4611,
+                      "name": "version",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4582,
+                      "src": "1311:7:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1294:24:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 4613,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1294:24:4"
+                }
+              ]
+            },
+            "id": 4615,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "id": 4585,
+                    "name": "cOwner",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4576,
+                    "src": "1080:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 4586,
+                "kind": "baseConstructorSpecifier",
+                "modifierName": {
+                  "id": 4584,
+                  "name": "Ownable",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 4787,
+                  "src": "1072:7:4"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1072:15:4"
+              }
+            ],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4583,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4576,
+                  "mutability": "mutable",
+                  "name": "cOwner",
+                  "nameLocation": "999:6:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4615,
+                  "src": "991:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4575,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "991:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4578,
+                  "mutability": "mutable",
+                  "name": "baseContract",
+                  "nameLocation": "1015:12:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4615,
+                  "src": "1007:20:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4577,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1007:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4580,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "1043:4:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4615,
+                  "src": "1029:18:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4579,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1029:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4582,
+                  "mutability": "mutable",
+                  "name": "version",
+                  "nameLocation": "1063:7:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4615,
+                  "src": "1049:21:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4581,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1049:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "990:81:4"
+            },
+            "returnParameters": {
+              "id": 4587,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1088:0:4"
+            },
+            "scope": 4644,
+            "src": "979:346:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 4623,
+              "nodeType": "Block",
+              "src": "1444:35:4",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 4621,
+                    "name": "_moduleName",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4572,
+                    "src": "1461:11:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 4620,
+                  "id": 4622,
+                  "nodeType": "Return",
+                  "src": "1454:18:4"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 4616,
+              "nodeType": "StructuredDocumentation",
+              "src": "1331:48:4",
+              "text": " @dev Returns the module name."
+            },
+            "functionSelector": "93f0899a",
+            "id": 4624,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "moduleName",
+            "nameLocation": "1393:10:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4617,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1403:2:4"
+            },
+            "returnParameters": {
+              "id": 4620,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4619,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4624,
+                  "src": "1429:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4618,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1429:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1428:15:4"
+            },
+            "scope": 4644,
+            "src": "1384:95:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 4632,
+              "nodeType": "Block",
+              "src": "1604:38:4",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 4630,
+                    "name": "_moduleVersion",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4574,
+                    "src": "1621:14:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 4629,
+                  "id": 4631,
+                  "nodeType": "Return",
+                  "src": "1614:21:4"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 4625,
+              "nodeType": "StructuredDocumentation",
+              "src": "1485:51:4",
+              "text": " @dev Returns the module version."
+            },
+            "functionSelector": "baa3b4d7",
+            "id": 4633,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "moduleVersion",
+            "nameLocation": "1550:13:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4626,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1563:2:4"
+            },
+            "returnParameters": {
+              "id": 4629,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4628,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4633,
+                  "src": "1589:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4627,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1589:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1588:15:4"
+            },
+            "scope": 4644,
+            "src": "1541:101:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 4642,
+              "nodeType": "Block",
+              "src": "1760:37:4",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 4640,
+                    "name": "_baseContract",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4570,
+                    "src": "1777:13:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Avara_$2813",
+                      "typeString": "contract Avara"
+                    }
+                  },
+                  "functionReturnParameters": 4639,
+                  "id": 4641,
+                  "nodeType": "Return",
+                  "src": "1770:20:4"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 4634,
+              "nodeType": "StructuredDocumentation",
+              "src": "1648:50:4",
+              "text": " @dev Returns the base contract."
+            },
+            "id": 4643,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getBaseContract",
+            "nameLocation": "1712:15:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4635,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1727:2:4"
+            },
+            "returnParameters": {
+              "id": 4639,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4638,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4643,
+                  "src": "1753:5:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Avara_$2813",
+                    "typeString": "contract Avara"
+                  },
+                  "typeName": {
+                    "id": 4637,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 4636,
+                      "name": "Avara",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 2813,
+                      "src": "1753:5:4"
+                    },
+                    "referencedDeclaration": 2813,
+                    "src": "1753:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Avara_$2813",
+                      "typeString": "contract Avara"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1752:7:4"
+            },
+            "scope": 4644,
+            "src": "1703:94:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 4645,
+        "src": "830:970:4",
+        "usedErrors": []
+      }
+    ],
+    "src": "758:1043:4"
+  },
+  "legacyAST": {
+    "absolutePath": "/home/oncemore/Blockchain/avara-test/contract/contracts/abstract/AvaraModule.sol",
+    "exportedSymbols": {
+      "Avara": [
+        2813
+      ],
+      "AvaraModule": [
+        4644
+      ],
+      "Context": [
+        4670
+      ],
+      "IBEP20": [
+        4889
+      ],
+      "IPancakeFactory": [
+        4953
+      ],
+      "IPancakePair": [
+        5196
+      ],
+      "IPancakeRouter01": [
+        5505
+      ],
+      "IPancakeRouter02": [
+        5594
+      ],
+      "Ownable": [
+        4787
+      ],
+      "SafeMath": [
+        5906
+      ]
+    },
+    "id": 4645,
+    "license": "AGPL-3.0-or-later",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 4563,
+        "literals": [
+          "solidity",
+          "0.8",
+          ".4"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "758:22:4"
+      },
+      {
+        "absolutePath": "/home/oncemore/Blockchain/avara-test/contract/contracts/abstract/Ownable.sol",
+        "file": "./Ownable.sol",
+        "id": 4564,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 4645,
+        "sourceUnit": 4788,
+        "src": "782:23:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/home/oncemore/Blockchain/avara-test/contract/contracts/Avara.sol",
+        "file": "../Avara.sol",
+        "id": 4565,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 4645,
+        "sourceUnit": 2814,
+        "src": "806:22:4",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": true,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 4566,
+              "name": "Ownable",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 4787,
+              "src": "863:7:4"
+            },
+            "id": 4567,
+            "nodeType": "InheritanceSpecifier",
+            "src": "863:7:4"
+          }
+        ],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 4644,
+        "linearizedBaseContracts": [
+          4644,
+          4787,
+          4670
+        ],
+        "name": "AvaraModule",
+        "nameLocation": "848:11:4",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 4570,
+            "mutability": "mutable",
+            "name": "_baseContract",
+            "nameLocation": "892:13:4",
+            "nodeType": "VariableDeclaration",
+            "scope": 4644,
+            "src": "878:27:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_Avara_$2813",
+              "typeString": "contract Avara"
+            },
+            "typeName": {
+              "id": 4569,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 4568,
+                "name": "Avara",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 2813,
+                "src": "878:5:4"
+              },
+              "referencedDeclaration": 2813,
+              "src": "878:5:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Avara_$2813",
+                "typeString": "contract Avara"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 4572,
+            "mutability": "mutable",
+            "name": "_moduleName",
+            "nameLocation": "926:11:4",
+            "nodeType": "VariableDeclaration",
+            "scope": 4644,
+            "src": "911:26:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 4571,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "911:6:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "constant": false,
+            "id": 4574,
+            "mutability": "mutable",
+            "name": "_moduleVersion",
+            "nameLocation": "958:14:4",
+            "nodeType": "VariableDeclaration",
+            "scope": 4644,
+            "src": "943:29:4",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 4573,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "943:6:4",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "visibility": "private"
+          },
+          {
+            "body": {
+              "id": 4614,
+              "nodeType": "Block",
+              "src": "1088:237:4",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 4595,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 4588,
+                      "name": "_baseContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4570,
+                      "src": "1098:13:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Avara_$2813",
+                        "typeString": "contract Avara"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "arguments": [
+                            {
+                              "id": 4592,
+                              "name": "baseContract",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 4578,
+                              "src": "1128:12:4",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "id": 4591,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "lValueRequested": false,
+                            "nodeType": "ElementaryTypeNameExpression",
+                            "src": "1120:8:4",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_address_payable_$",
+                              "typeString": "type(address payable)"
+                            },
+                            "typeName": {
+                              "id": 4590,
+                              "name": "address",
+                              "nodeType": "ElementaryTypeName",
+                              "src": "1120:8:4",
+                              "stateMutability": "payable",
+                              "typeDescriptions": {}
+                            }
+                          },
+                          "id": 4593,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "typeConversion",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1120:21:4",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        ],
+                        "id": 4589,
+                        "name": "Avara",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2813,
+                        "src": "1114:5:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_Avara_$2813_$",
+                          "typeString": "type(contract Avara)"
+                        }
+                      },
+                      "id": 4594,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "typeConversion",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1114:28:4",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_Avara_$2813",
+                        "typeString": "contract Avara"
+                      }
+                    },
+                    "src": "1098:44:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Avara_$2813",
+                      "typeString": "contract Avara"
+                    }
+                  },
+                  "id": 4596,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1098:44:4"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 4602,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "arguments": [],
+                          "expression": {
+                            "argumentTypes": [],
+                            "expression": {
+                              "id": 4598,
+                              "name": "_baseContract",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 4570,
+                              "src": "1160:13:4",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_Avara_$2813",
+                                "typeString": "contract Avara"
+                              }
+                            },
+                            "id": 4599,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "owner",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 4706,
+                            "src": "1160:19:4",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_external_view$__$returns$_t_address_$",
+                              "typeString": "function () view external returns (address)"
+                            }
+                          },
+                          "id": 4600,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1160:21:4",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "id": 4601,
+                          "name": "cOwner",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4576,
+                          "src": "1185:6:4",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "1160:31:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "hexValue": "546865206d6f64756c65206465706c6f796572206d75737420626520746865206f776e6572206f6620746865206261736520636f6e747261637421",
+                        "id": 4603,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1193:61:4",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_c433a4a883465c851482e8861768b3ae640c6d1a0d8d0d01dd5f602cbb5b7eab",
+                          "typeString": "literal_string \"The module deployer must be the owner of the base contract!\""
+                        },
+                        "value": "The module deployer must be the owner of the base contract!"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_c433a4a883465c851482e8861768b3ae640c6d1a0d8d0d01dd5f602cbb5b7eab",
+                          "typeString": "literal_string \"The module deployer must be the owner of the base contract!\""
+                        }
+                      ],
+                      "id": 4597,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4294967278,
+                        4294967278
+                      ],
+                      "referencedDeclaration": 4294967278,
+                      "src": "1152:7:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
+                        "typeString": "function (bool,string memory) pure"
+                      }
+                    },
+                    "id": 4604,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1152:103:4",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 4605,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1152:103:4"
+                },
+                {
+                  "expression": {
+                    "id": 4608,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 4606,
+                      "name": "_moduleName",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4572,
+                      "src": "1266:11:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 4607,
+                      "name": "name",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4580,
+                      "src": "1280:4:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1266:18:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 4609,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1266:18:4"
+                },
+                {
+                  "expression": {
+                    "id": 4612,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 4610,
+                      "name": "_moduleVersion",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4574,
+                      "src": "1294:14:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 4611,
+                      "name": "version",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4582,
+                      "src": "1311:7:4",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1294:24:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 4613,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1294:24:4"
+                }
+              ]
+            },
+            "id": 4615,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "id": 4585,
+                    "name": "cOwner",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4576,
+                    "src": "1080:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  }
+                ],
+                "id": 4586,
+                "kind": "baseConstructorSpecifier",
+                "modifierName": {
+                  "id": 4584,
+                  "name": "Ownable",
+                  "nodeType": "IdentifierPath",
+                  "referencedDeclaration": 4787,
+                  "src": "1072:7:4"
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "1072:15:4"
+              }
+            ],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4583,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4576,
+                  "mutability": "mutable",
+                  "name": "cOwner",
+                  "nameLocation": "999:6:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4615,
+                  "src": "991:14:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4575,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "991:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4578,
+                  "mutability": "mutable",
+                  "name": "baseContract",
+                  "nameLocation": "1015:12:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4615,
+                  "src": "1007:20:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 4577,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1007:7:4",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4580,
+                  "mutability": "mutable",
+                  "name": "name",
+                  "nameLocation": "1043:4:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4615,
+                  "src": "1029:18:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4579,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1029:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 4582,
+                  "mutability": "mutable",
+                  "name": "version",
+                  "nameLocation": "1063:7:4",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4615,
+                  "src": "1049:21:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4581,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1049:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "990:81:4"
+            },
+            "returnParameters": {
+              "id": 4587,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1088:0:4"
+            },
+            "scope": 4644,
+            "src": "979:346:4",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 4623,
+              "nodeType": "Block",
+              "src": "1444:35:4",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 4621,
+                    "name": "_moduleName",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4572,
+                    "src": "1461:11:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 4620,
+                  "id": 4622,
+                  "nodeType": "Return",
+                  "src": "1454:18:4"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 4616,
+              "nodeType": "StructuredDocumentation",
+              "src": "1331:48:4",
+              "text": " @dev Returns the module name."
+            },
+            "functionSelector": "93f0899a",
+            "id": 4624,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "moduleName",
+            "nameLocation": "1393:10:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4617,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1403:2:4"
+            },
+            "returnParameters": {
+              "id": 4620,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4619,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4624,
+                  "src": "1429:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4618,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1429:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1428:15:4"
+            },
+            "scope": 4644,
+            "src": "1384:95:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 4632,
+              "nodeType": "Block",
+              "src": "1604:38:4",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 4630,
+                    "name": "_moduleVersion",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4574,
+                    "src": "1621:14:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "functionReturnParameters": 4629,
+                  "id": 4631,
+                  "nodeType": "Return",
+                  "src": "1614:21:4"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 4625,
+              "nodeType": "StructuredDocumentation",
+              "src": "1485:51:4",
+              "text": " @dev Returns the module version."
+            },
+            "functionSelector": "baa3b4d7",
+            "id": 4633,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "moduleVersion",
+            "nameLocation": "1550:13:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4626,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1563:2:4"
+            },
+            "returnParameters": {
+              "id": 4629,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4628,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4633,
+                  "src": "1589:13:4",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 4627,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1589:6:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1588:15:4"
+            },
+            "scope": 4644,
+            "src": "1541:101:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 4642,
+              "nodeType": "Block",
+              "src": "1760:37:4",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 4640,
+                    "name": "_baseContract",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 4570,
+                    "src": "1777:13:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Avara_$2813",
+                      "typeString": "contract Avara"
+                    }
+                  },
+                  "functionReturnParameters": 4639,
+                  "id": 4641,
+                  "nodeType": "Return",
+                  "src": "1770:20:4"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 4634,
+              "nodeType": "StructuredDocumentation",
+              "src": "1648:50:4",
+              "text": " @dev Returns the base contract."
+            },
+            "id": 4643,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getBaseContract",
+            "nameLocation": "1712:15:4",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4635,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1727:2:4"
+            },
+            "returnParameters": {
+              "id": 4639,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 4638,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 4643,
+                  "src": "1753:5:4",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_Avara_$2813",
+                    "typeString": "contract Avara"
+                  },
+                  "typeName": {
+                    "id": 4637,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 4636,
+                      "name": "Avara",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 2813,
+                      "src": "1753:5:4"
+                    },
+                    "referencedDeclaration": 2813,
+                    "src": "1753:5:4",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_Avara_$2813",
+                      "typeString": "contract Avara"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1752:7:4"
+            },
+            "scope": 4644,
+            "src": "1703:94:4",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 4645,
+        "src": "830:970:4",
+        "usedErrors": []
+      }
+    ],
+    "src": "758:1043:4"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2022-01-27T08:30:01.660Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "moduleName()": {
+        "details": "Returns the module name."
+      },
+      "moduleVersion()": {
+        "details": "Returns the module version."
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "previousOwner()": {
+        "details": "Returns the address of the previous owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without an owner. It won't be possible to call `onlyOwner` functions anymore. Can only be called by the current owner."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
